@@ -14,7 +14,7 @@ public class Steps {
     WebDriver driver;
     Screen sc = new Screen();
 
-    @Given("^Open the IE and launch the application$")
+    @Given("^Open the IE and launch Youtube$")
     public void open_the_Firefox_and_launch_the_application() throws Throwable {
         System.setProperty("webdriver.ie.driver", "C://Users//Admin//Downloads//IE//IEDriverServer.exe");
         driver = new InternetExplorerDriver();
@@ -26,12 +26,12 @@ public class Steps {
 
     }
 
-    @When("^Enter the Username and Password$")
+    @When("^Enter the Search Criteria$")
     public void enter_the_Username_and_Password() throws Throwable {
         sc.type("C:\\Users\\Admin\\Desktop\\search.PNG", "eTheRealYT");
     }
 
-    @Then("^Reset the credential$")
+    @Then("^Submit$")
     public void Reset_the_credential() throws Throwable {
         sc.click("C:\\Users\\Admin\\Desktop\\submit.PNG");
     }
